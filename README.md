@@ -36,7 +36,7 @@ Demo中第一个是默认布局，没添加任何代码
         toast.show();
     }
        
-# 这里可以控制很多属性具体见：ToolBarFactory
+## 这里可以控制很多属性具体见：ToolBarFactory
 
     /**
      * 设置toolbar的背景颜色

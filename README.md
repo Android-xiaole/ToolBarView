@@ -14,7 +14,28 @@ Demo中第一个是默认布局，没添加任何代码
                 .setRightVisible(true,false)
                 .setOnToolBarClickListener(this)
                 .show();
-                
+                
+还有点击事件：
+    
+    @Override
+    public void onToolBarLeftClickListener() {
+        toast.setText("点击的左边");
+        toast.show();
+    }
+
+    @Override
+    public void onToolBarTitleClickListener(TextView title) {
+        toast.setText("点击的title");
+        toast.show();
+        title.setText("我被点击了");
+    }
+
+    @Override
+    public void onToolBarRightClickListener() {
+        toast.setText("点击的右边");
+        toast.show();
+    }
+       
 这里可以控制很多属性具体见：ToolBarFactory
 
     /**

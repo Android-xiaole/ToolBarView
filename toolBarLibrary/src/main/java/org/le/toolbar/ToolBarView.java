@@ -81,12 +81,12 @@ public class ToolBarView extends FrameLayout implements ToolBarFactory,View.OnCl
             this.title = title;
         }
         titleSize = px2dp(typedArray.getDimensionPixelOffset(R.styleable.toolBarView_titleSize,30));
-        titleColor = typedArray.getInt(R.styleable.toolBarView_titleColor,Color.WHITE);
-        leftImgRes = typedArray.getInt(R.styleable.toolBarView_leftImgRes,R.drawable.fanhui);
+        titleColor = typedArray.getColor(R.styleable.toolBarView_titleColor,Color.WHITE);
+        leftImgRes = typedArray.getResourceId(R.styleable.toolBarView_leftImgRes,R.drawable.fanhui);
         leftImgHei = typedArray.getDimensionPixelOffset(R.styleable.toolBarView_leftImgHei,dp2px(28));
         leftImgWid = typedArray.getDimensionPixelOffset(R.styleable.toolBarView_leftImgWid,dp2px(28));
         leftImgVisible = typedArray.getBoolean(R.styleable.toolBarView_leftImgVisible,true);
-        rightImgRes = typedArray.getInt(R.styleable.toolBarView_rightImgRes,R.drawable.queding);
+        rightImgRes = typedArray.getResourceId(R.styleable.toolBarView_rightImgRes,R.drawable.queding);
         rightImgHei = typedArray.getDimensionPixelOffset(R.styleable.toolBarView_rightImgHei,dp2px(28));
         rightImgWid = typedArray.getDimensionPixelOffset(R.styleable.toolBarView_rightImgWid,dp2px(28));
         rightImgVisible = typedArray.getBoolean(R.styleable.toolBarView_rightImgVisible,true);
@@ -95,14 +95,14 @@ public class ToolBarView extends FrameLayout implements ToolBarFactory,View.OnCl
             this.leftText = leftText;
         }
         leftTextSize = px2dp(typedArray.getDimensionPixelOffset(R.styleable.toolBarView_leftTextSize,30));
-        leftTextColor = typedArray.getInt(R.styleable.toolBarView_leftTextColor,Color.WHITE);
+        leftTextColor = typedArray.getColor(R.styleable.toolBarView_leftTextColor,Color.WHITE);
         leftTextVisible = typedArray.getBoolean(R.styleable.toolBarView_leftTextVisible,true);
         String rightText = typedArray.getString(R.styleable.toolBarView_rightText);
         if (rightText != null){
             this.rightText = rightText;
         }
         rightTextSize = px2dp(typedArray.getDimensionPixelOffset(R.styleable.toolBarView_rightTextSize,30));
-        rightTextColor = typedArray.getInt(R.styleable.toolBarView_rightTextColor,Color.WHITE);
+        rightTextColor = typedArray.getColor(R.styleable.toolBarView_rightTextColor,Color.WHITE);
         rightTextVisible = typedArray.getBoolean(R.styleable.toolBarView_rightTextVisible,true);
         show();
     }

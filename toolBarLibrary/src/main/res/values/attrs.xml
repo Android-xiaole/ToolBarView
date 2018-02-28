@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="toolBarView">
-        <attr name="_height" format="integer"></attr>
-        <attr name="backgColor" format="integer"></attr>
+        <attr name="_height" format="dimension"></attr>
+        <attr name="backgColor" format="color"></attr>
         <attr name="title" format="string"></attr>
-        <attr name="titleSize" format="integer"></attr>
-        <attr name="titleColor" format="integer"></attr>
-        <attr name="leftImgRes" format="integer"></attr>
-        <attr name="leftImgWid" format="integer"></attr>
-        <attr name="leftImgHei" format="integer"></attr>
+        <attr name="titleSize" format="dimension"></attr>
+        <attr name="titleColor" format="color"></attr>
+        <attr name="leftImgRes" format="reference"></attr>
+        <attr name="leftImgWid" format="dimension"></attr>
+        <attr name="leftImgHei" format="dimension"></attr>
         <attr name="leftImgVisible" format="boolean"></attr>
-        <attr name="rightImgRes" format="integer"></attr>
-        <attr name="rightImgWid" format="integer"></attr>
-        <attr name="rightImgHei" format="integer"></attr>
+        <attr name="rightImgRes" format="reference"></attr>
+        <attr name="rightImgWid" format="dimension"></attr>
+        <attr name="rightImgHei" format="dimension"></attr>
         <attr name="rightImgVisible" format="boolean"></attr>
         <attr name="leftText" format="string"></attr>
-        <attr name="leftTextSize" format="integer"></attr>
-        <attr name="leftTextColor" format="integer"></attr>
+        <attr name="leftTextSize" format="dimension"></attr>
+        <attr name="leftTextColor" format="color"></attr>
         <attr name="leftTextVisible" format="boolean"></attr>
         <attr name="rightText" format="string"></attr>
-        <attr name="rightTextSize" format="integer"></attr>
-        <attr name="rightTextColor" format="integer"></attr>
+        <attr name="rightTextSize" format="dimension"></attr>
+        <attr name="rightTextColor" format="color"></attr>
         <attr name="rightTextVisible" format="boolean"></attr>
     </declare-styleable>
 </resources>
